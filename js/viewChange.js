@@ -34,8 +34,8 @@ const showSelectedView = (viewNo) => {
 
             break;
 
-        case SIGN_OUT_VIEW,
-            SIGN_IN_VIEW:
+        case SIGN_OUT_VIEW:
+        case SIGN_IN_VIEW:
             signUpWrap.style.display = "none";
             signInWrap.style.display = "block";
             writeWrap.style.display = "none";
@@ -48,10 +48,9 @@ const showSelectedView = (viewNo) => {
             signInWrap.style.display = "none";
             writeWrap.style.display = "block";
             listWrap.style.display = "none";
-
             break;
 
-        case diary_list_VIEW
+        case diary_list_VIEW:
             signUpWrap.style.display = "none";
             signInWrap.style.display = "none";
             writeWrap.style.display = "none";
